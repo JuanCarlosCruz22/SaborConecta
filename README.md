@@ -41,6 +41,14 @@ La carpeta `docs` se irá utilizando en próximos avances para mantener toda la 
   - `feature/wireframes-usuario-regular`
   - `feature/wireframes-chef`
   - `feature/integracion-navegacion`
+
+## Wireframes
+
+Documento realizado en Figma:
+https://www.figma.com/design/0FveH9f2OPCqrFrdQFjWw8/Integracion-Wireframes-Dise%C3%B1o-y-programacion-web?node-id=0-1&t=W8IY0paEs6EnjLX7-1
+
+PDF final:
+docs/SaborConecta_Wireframes_Final.pdf
   - `feature/readme`
 - Al finalizar una tarea, se abre un **Pull Request** hacia `main` para que el resto del equipo revise antes de fusionar.
 - Los mensajes de commit son cortos, descriptivos y en español, indicando la acción realizada. Ejemplos:
