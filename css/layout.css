@@ -1,0 +1,501 @@
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 1rem 2rem;
+}
+.navLinks {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+.navLinks a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+.navLinks a:hover {
+    color: #4caf7d;
+    background-color: #3a3a3a;
+}
+.navPerfil {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.perfilChef {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding: 1.5rem 2rem;
+    margin: 1rem;
+    border-radius: 12px;
+    min-height: 100px;
+}
+.perfilInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+}
+.perfilTexto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.perfilTexto h2 {
+    font-size: 1.3rem;
+    margin-top: 0.8rem;
+}
+.estadisticas {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.card {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+}
+.card p {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+}
+
+.card h3 {
+    font-size: 2rem;
+    color: #f0f0f0;
+    margin-top: 0.5rem;
+}
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+.contenidoPrincipal {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem;
+    flex: 1;
+}
+
+.ranking, .actividad {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.ranking ol {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.ranking li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    background-color: #333333;
+}
+
+.ranking li p {
+    font-size: 0.95rem;
+    color: #f0f0f0;
+    font-weight: 600;
+}
+
+.ranking li span {
+    font-size: 0.8rem;
+    color: #a0a0a0;
+}
+.actividad ul {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.actividad li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    background-color: #333333;
+}
+.actividad li p {
+    font-size: 0.9rem;
+    color: #f0f0f0;
+}
+
+.actividad li span {
+    font-size: 0.75rem;
+    color: #a0a0a0;
+}
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto;
+    border-top: 1px solid #2e2e2e;
+    color: #a0a0a0;
+    font-size: 0.85rem;
+}
+.recetaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.recetaAcciones {
+    display: flex;
+    gap: 1rem;
+}
+
+.recetaContenido {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.columnaIzquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1;
+}
+
+.columnaDerecha {
+    flex: 1;
+}
+
+.cajaFormulario {
+    background-color: #2a2a2a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.campoCompleto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.campoDoble {
+    display: flex;
+    gap: 1rem;
+}
+
+.campoDoble > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    flex: 1;
+}
+
+.cajaFormulario label {
+    font-size: 0.75rem;
+    color: #a0a0a0;
+    text-transform: uppercase;
+}
+
+.cajaFormulario input, .cajaFormulario textarea {
+    background-color: #333333;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 0.7rem 1rem;
+    color: #f0f0f0;
+    width: 100%;
+}
+.tablaHeader {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.5rem;
+    color: #a0a0a0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
+
+.tablaFila {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.pasoHeader {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.pasoNumero {
+    background-color: #4caf7d;
+    color: #1a1a1a;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.paso {
+    background-color: #333333;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.pasoAcciones {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pasoAcciones .btnAgregar {
+    width: auto;
+}
+
+.presupuesto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem;
+    background-color: #333333;
+    border-radius: 8px;
+}
+
+.presupuestoValor {
+    color: #4caf7d;
+    font-weight: bold;
+}
+.verificacionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+}
+
+.verificacionFiltros {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0 2rem 1rem 2rem;
+}
+
+.verificacionLista {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.recetaCard {
+    display: flex;
+    gap: 1.5rem;
+    background-color: #2a2a2a;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+
+.recetaImagen {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    background-color: #333333;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #a0a0a0;
+    font-size: 0.75rem;
+    gap: 0.5rem;
+}
+
+.recetaInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 1;
+}
+
+.recetaInfoHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.recetaTags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.4rem;
+}
+
+.recetaBotones {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.recetaInfo input {
+    background-color: #333333;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    color: #a0a0a0;
+    width: 100%;
+}
+
+.perfilAcciones{
+
+    display:flex;
+    gap:1rem;
+
+}
+
+img{
+
+    max-width:100%;
+    height:auto;
+
+}
+
+@media(max-width:900px){
+
+.navBar{
+
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+
+}
+
+.navLinks{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:2rem;
+
+}
+
+.perfilChef{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.estadisticas{
+
+    flex-direction:column;
+
+}
+
+.contenidoPrincipal{
+
+    flex-direction:column;
+
+}
+
+.recetaContenido{
+
+    flex-direction:column;
+    padding:20px;
+
+}
+
+.perfilAcciones{
+
+    flex-direction:column;
+    width:100%;
+
+}
+
+.campoDoble{
+
+    flex-direction:column;
+
+}
+
+.recetaCard{
+
+    flex-direction:column;
+
+}
+
+.recetaInfoHeader{
+
+    flex-direction:column;
+    gap:10px;
+
+}
+
+.recetaBotones{
+
+    flex-wrap:wrap;
+
+}
+
+.verificacionHeader{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.verificacionFiltros{
+
+    flex-wrap:wrap;
+    padding:20px;
+
+}
+
+.recetaHeader{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+.recetaAcciones{
+
+    flex-wrap:wrap;
+
+}
+
+.perfilInfo{
+
+    flex-direction:column;
+    text-align:center;
+
+}
+
+.perfilTexto{
+
+    align-items:center;
+
+}
+
+}

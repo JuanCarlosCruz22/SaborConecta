@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación - Sabor Conecta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+   <header>
+
+        <nav class="navBar">
+            <!-- Logo -->
+            <div class="navLogo">
+                <i class="fa-solid fa-utensils"></i>
+                <span>SaborConecta</span>
+            </div>
+
+            <!-- Links de navegación -->
+            <ul class="navLinks">
+                <li><a href="adminDashboard.html">Dashboard</a></li>
+                <li><a href="adminRecetas.html">Mis recetas</a></li>
+                <li><a href="adminVerificacion.html">Verificación</a></li>
+            </ul>
+
+            <!-- Perfil -->
+            <div class="navPerfil">
+                <span class="chefBadge"><i class="fa-solid fa-user-tie"></i> Chef Experto</span>
+                <div class="avatar">AL</div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="verificacionHeader">
+            <div>
+                <h1>Bandeja de verificación</h1>
+                <p>Revisa y valida las recetas enviadas por la comunidad</p>
+            </div>
+            <button class="btnSecundario"><i class="fa-solid fa-clock-rotate-left"></i> Ver historial completo</button>
+    
+        </section>
+
+        <section class="verificacionFiltros">
+            <i class="fa-solid fa-filter"></i>
+            <button class="filtroBtn filtroActivo">Todas</button>
+            <button class="filtroBtn">Pendientes</button>
+            <button class="filtroBtn">Recientes</button>
+            <span class="filtroTotal">4 recetas</span>
+        </section>
+
+        <section class="verificacionLista">
+
+            <div class="recetaCard">
+                <div class="recetaImagen">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Sin imagen</span>
+                </div>
+                <div class="recetaInfo">
+                    <div class="recetaInfoHeader">
+                        <div>
+                            <h3>Mole Negro Oaxaqueño</h3>
+                            <p>por @sofia.gutierrez · 20 jun 2025</p>
+                            <div class="recetaTags">
+                                <span class="tag">Mexicana</span>
+                                <span class="tag">Alta</span>
+                                <span class="tag"><i class="fa-solid fa-clock"></i> 3h 30min</span>
+                            </div>
+                        </div>
+                        <span class="badgePendiente">Pendiente</span>
+                    </div>
+                    <input type="text" placeholder="Comentario del chef (opcional)...">
+                    <div class="recetaBotones">
+                        <button class="btnAprobar"><i class="fa-solid fa-thumbs-up"></i> Aprobar</button>
+                        <button class="btnRechazar"><i class="fa-solid fa-thumbs-down"></i> Rechazar</button>
+                        <button class="btnVerDetalle"><i class="fa-solid fa-eye"></i> Ver detalle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recetaCard">
+                <div class="recetaImagen">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Sin imagen</span>
+                </div>
+                <div class="recetaInfo">
+                    <div class="recetaInfoHeader">
+                        <div>
+                            <h3>Sushi Rolls de Salmón</h3>
+                            <p>por @kenji.tanaka · 19 jun 2025</p>
+                            <div class="recetaTags">
+                                <span class="tag">Japonesa</span>
+                                <span class="tag">Media</span>
+                                <span class="tag"><i class="fa-solid fa-clock"></i> 1h 15min</span>
+                            </div>
+                        </div>
+                        <span class="badgePendiente">Pendiente</span>
+                    </div>
+                    <input type="text" placeholder="Comentario del chef (opcional)...">
+                    <div class="recetaBotones">
+                        <button class="btnAprobar"><i class="fa-solid fa-thumbs-up"></i> Aprobar</button>
+                        <button class="btnRechazar"><i class="fa-solid fa-thumbs-down"></i> Rechazar</button>
+                        <button class="btnVerDetalle"><i class="fa-solid fa-eye"></i> Ver detalle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recetaCard">
+                <div class="recetaImagen">
+                    <i class="fa-regular fa-image"></i>
+                    <span>Sin imagen</span>
+                </div>
+                <div class="recetaInfo">
+                    <div class="recetaInfoHeader">
+                        <div>
+                            <h3>Croissant de Mantequilla</h3>
+                            <p>por @ana.bouchard · 18 jun 2025</p>
+                            <div class="recetaTags">
+                                <span class="tag">Francesa</span>
+                                <span class="tag">Alta</span>
+                                <span class="tag"><i class="fa-solid fa-clock"></i> 4h</span>
+                            </div>
+                        </div>
+                        <span class="badgeReciente">Reciente</span>
+                    </div>
+                    <input type="text" placeholder="Comentario del chef (opcional)...">
+                    <div class="recetaBotones">
+                        <button class="btnAprobar"><i class="fa-solid fa-thumbs-up"></i> Aprobar</button>
+                        <button class="btnRechazar"><i class="fa-solid fa-thumbs-down"></i> Rechazar</button>
+                        <button class="btnVerDetalle"><i class="fa-solid fa-eye"></i> Ver detalle</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Contacto: contacto@saborconecta.com</p>
+        <p>Soporte: soporte@saborconecta.com</p>
+        <p>&copy; 2024 SaborConecta. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

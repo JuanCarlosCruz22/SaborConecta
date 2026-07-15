@@ -1,0 +1,194 @@
+.perfilAvatar {
+    background-color: #4caf7d;
+    color: #1a1a1a;
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.avatar {
+    background-color: #4caf7d;
+    color: #1a1a1a;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.btnPrimario {
+    background-color: #4caf7d;
+    color: #f0f0f0;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btnSecundario {
+    background-color: transparent;
+    color: #f0f0f0;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #f0f0f0;
+}
+.btnPrimario:hover {
+    background-color: #3d9e6d;
+}
+
+.btnSecundario:hover {
+    background-color: #3a3a3a;
+}
+.badge {
+    background-color: #4caf7d;
+    color: #f0f0f0;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+}
+.tag {
+    background-color: #1a1a1a;
+    color: #4caf7d;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.2rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid #4caf7d;
+    margin-right: 0.5rem;
+}
+.tags {
+    margin-top: 0.5rem;
+}
+.perfilTexto p {
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    margin-top: 0.5rem;
+}
+.chefBadge {
+    border: 1px solid #4caf7d;
+    color: #4caf7d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+.btnAgregar {
+    background-color: transparent;
+    color: #4caf7d;
+    border: 1px dashed #4caf7d;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.filtroBtn {
+    background-color: transparent;
+    color: #f0f0f0;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.filtroActivo {
+    background-color: #4caf7d;
+    color: #1a1a1a;
+    border: none;
+    font-weight: bold;
+}
+
+.badgePendiente {
+    background-color: #f0a500;
+    color: #1a1a1a;
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.badgeReciente {
+    background-color: #4a9edd;
+    color: #1a1a1a;
+    padding: 0.2rem 0.8rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.btnAprobar {
+    background-color: #4caf7d;
+    color: #1a1a1a;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnRechazar {
+    background-color: #e05252;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnVerDetalle {
+    background-color: transparent;
+    color: #f0f0f0;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.navLogo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #4caf7d;
+}
+
+.navLogo i {
+    color: #4caf7d;
+    font-size: 1.3rem;
+}
+
+@media(max-width:900px){
+
+.btnPrimario,
+.btnSecundario,
+.btnAprobar,
+.btnRechazar,
+.btnVerDetalle,
+.btnAgregar{
+
+    width:100%;
+    text-align:center;
+
+}
+
+.tags{
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:.5rem;
+
+}
+
+}

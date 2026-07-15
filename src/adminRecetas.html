@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Nueva Receta - SaborConecta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navBar">
+            <div class="navLogo">
+                <i class="fa-solid fa-utensils"></i>
+                <span>SaborConecta</span>
+            </div>
+            <ul class="navLinks">
+                <li><a href="adminDashboard.html">Dashboard</a></li>
+                <li><a href="adminRecetas.html">Mis recetas</a></li>
+                <li><a href="adminVerificacion.html">Verificación</a></li>
+            </ul>
+            <div class="navPerfil">
+                <span class="chefBadge"><i class="fa-solid fa-user-tie"></i> Chef Experto</span>
+                <div class="avatar">AL</div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="recetaHeader">
+            <div>
+                <h1>Crear nueva receta</h1>
+                <p>Completa los campos para publicar tu receta en SaborConecta</p>
+            </div>
+            <div class="recetaAcciones">
+                <button class="btnSecundario">Guardar borrador</button>
+                <button class="btnPrimario"><i class="fa-solid fa-arrow-right"></i> Publicar receta</button>
+            </div>
+        </section>
+
+        <section class="recetaContenido">
+
+            <!-- Columna izquierda -->
+            <div class="columnaIzquierda">
+
+                <!-- Información general -->
+                <div class="cajaFormulario">
+                    <h3><i class="fa-solid fa-utensils"></i> Información general</h3>
+
+                    <div class="campoCompleto">
+                        <label for="nombreReceta">Nombre de la receta</label>
+                        <input type="text" id="nombreReceta" placeholder="Nombre de la receta">
+                    </div>
+
+                    <div class="campoDoble">
+                        <div>
+                            <label for="tipoCocina">Tipo de cocina</label>
+                            <input type="text" id="tipoCocina" placeholder="Fusión">
+                        </div>
+                        <div>
+                            <label for="dificultad">Dificultad</label>
+                            <input type="text" id="dificultad" placeholder="Alta">
+                        </div>
+                    </div>
+
+                    <div class="campoDoble">
+                        <div>
+                            <label for="ocasion">Ocasión</label>
+                            <input type="text" id="ocasion" placeholder="Gala / Evento">
+                        </div>
+                        <div>
+                            <label for="tipoDieta">Tipo de dieta</label>
+                            <input type="text" id="tipoDieta" placeholder="Sin restricciones">
+                        </div>
+                    </div>
+
+                    <div class="campoDoble">
+                        <div>
+                            <label for="tiempoPreparacion">Tiempo de preparación</label>
+                            <input type="text" id="tiempoPreparacion" placeholder="25 minutos">
+                        </div>
+                        <div>
+                            <label for="porciones">Porciones</label>
+                            <input type="text" id="porciones" placeholder="4 porciones">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ingredientes -->
+                <div class="cajaFormulario">
+                    <h3><i class="fa-solid fa-book-open"></i> Ingredientes</h3>
+
+                    <div class="tablaIngredientes">
+                        <div class="tablaHeader">
+                            <span>Ingrediente</span>
+                            <span>Cantidad</span>
+                            <span>Costo</span>
+                        </div>
+                        <div class="tablaFila">
+                            <input type="text" placeholder="Atún fresco sashimi">
+                            <input type="text" placeholder="400 g">
+                            <input type="text" placeholder="$12.00">
+                        </div>
+                        <div class="tablaFila">
+                            <input type="text" placeholder="Leche de tigre">
+                            <input type="text" placeholder="150 ml">
+                            <input type="text" placeholder="$2.50">
+                        </div>
+                        <div class="tablaFila">
+                            <input type="text" placeholder="Cebolla morada">
+                            <input type="text" placeholder="1 unidad">
+                            <input type="text" placeholder="$0.80">
+                        </div>
+                    </div>
+
+                    <button class="btnAgregar">+ Agregar ingrediente</button>
+
+                    <div class="presupuesto">
+                        <span>Presupuesto estimado por porción</span>
+                        <span class="presupuestoValor">$15.30</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="columnaDerecha">
+                <div class="cajaFormulario">
+                    <h3><i class="fa-solid fa-arrow-right"></i> Instrucciones paso a paso</h3>
+
+                    <div class="paso">
+                        <div class="pasoHeader">
+                            <span class="pasoNumero">1</span>
+                            <span>Paso 1</span>
+                        </div>
+                        <textarea placeholder="Cortar el atún en cubos de 2 cm y reservar en frío."></textarea>
+                        <div class="pasoAcciones">
+                            <button class="btnAgregar"><i class="fa-solid fa-image"></i> Subir imagen</button>
+                            <button class="btnAgregar"><i class="fa-solid fa-video"></i> Subir video</button>
+                        </div>
+                    </div>
+
+                    <div class="paso">
+                        <div class="pasoHeader">
+                            <span class="pasoNumero">2</span>
+                            <span>Paso 2</span>
+                        </div>
+                        <textarea placeholder="Preparar la leche de tigre mezclando zumo de limón, ají amarillo y cilantro."></textarea>
+                        <div class="pasoAcciones">
+                            <button class="btnAgregar"><i class="fa-solid fa-image"></i> Subir imagen</button>
+                            <button class="btnAgregar"><i class="fa-solid fa-video"></i> Subir video</button>
+                        </div>
+                    </div>
+
+                    <button class="btnAgregar">+ Agregar paso</button>
+
+                    <div class="recetaAcciones">
+                        <button class="btnSecundario">Guardar borrador</button>
+                        <button class="btnPrimario"><i class="fa-solid fa-arrow-right"></i> Publicar receta</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: contacto@saborconecta.com</p>
+        <p>Soporte: soporte@saborconecta.com</p>
+        <p>&copy; 2024 SaborConecta. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

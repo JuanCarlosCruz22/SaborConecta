@@ -1,0 +1,228 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Poppins,sans-serif;
+    background:#1a1a1a;
+    color:#f0f0f0;
+
+}
+
+header{
+
+    background:#222;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+}
+
+.logo{
+
+    font-size:22px;
+    font-weight:600;
+    color:#4caf7d;
+
+}
+
+nav{
+
+    display:flex;
+    gap:30px;
+
+}
+
+nav a,
+header>a{
+
+    color:white;
+    text-decoration:none;
+
+}
+
+nav a:hover,
+header>a:hover{
+
+    color:#4caf7d;
+
+}
+
+main{
+
+    display:flex;
+    justify-content:center;
+
+    padding:50px 20px;
+
+}
+
+.formulario{
+
+    width:700px;
+
+    background:#2a2a2a;
+
+    padding:40px;
+
+    border-radius:15px;
+
+}
+
+.formulario h1{
+
+    text-align:center;
+    margin-bottom:10px;
+
+}
+
+.formulario p{
+
+    text-align:center;
+    color:#bbbbbb;
+    margin-bottom:30px;
+
+}
+
+.grupo{
+
+    display:flex;
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+label{
+
+    margin-bottom:8px;
+    font-weight:500;
+
+}
+
+input,
+select,
+textarea{
+
+    background:#1f1f1f;
+
+    color:white;
+
+    border:1px solid #444;
+
+    border-radius:8px;
+
+    padding:14px;
+
+    font-size:15px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:#4caf7d;
+
+    box-shadow:0 0 10px rgba(76,175,125,.35);
+
+}
+
+textarea{
+
+    resize:vertical;
+
+}
+
+button{
+
+    width:100%;
+
+    margin-top:10px;
+
+    padding:16px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#4caf7d;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#3f9d6e;
+
+}
+
+footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#222;
+
+}
+
+nav a:focus,
+header>a:focus,
+button:focus{
+
+    outline:3px solid #4caf7d;
+    outline-offset:4px;
+
+}
+
+img{
+
+    max-width:100%;
+    height:auto;
+
+}
+
+@media(max-width:768px){
+
+header{
+
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+
+}
+
+nav{
+
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 15px;
+
+}
+
+.formulario{
+
+    width:100%;
+    padding:25px;
+
+}
+
+}

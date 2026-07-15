@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard - SaborConecta</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <header>
+
+        <nav class="navBar">
+            <!-- Logo -->
+            <div class="navLogo">
+                <i class="fa-solid fa-utensils"></i>
+                <span>SaborConecta</span>
+            </div>
+
+            <!-- Links de navegación -->
+            <ul class="navLinks">
+                <li><a href="adminDashboard.html">Dashboard</a></li>
+                <li><a href="adminRecetas.html">Mis recetas</a></li>
+                <li><a href="adminVerificacion.html">Verificación</a></li>
+            </ul>
+
+            <!-- Perfil -->
+            <div class="navPerfil">
+                <span class="chefBadge"><i class="fa-solid fa-user-tie"></i> Chef Experto</span>
+                <div class="avatar">AL</div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="perfilChef">
+            <!-- Información del chef -->
+            <div class="perfilInfo">
+                <div class="perfilAvatar">AL</div>
+                <div class="perfilTexto">
+                    <h2>Antonio López <span class="badge"><i class="fa-solid fa-circle-check"></i> Chef Verificado</span></h2>
+                    <p>Miembro desde 2021</p>
+                    <div class="tags">
+                        <span class="tag">Cocina mediterránea</span>
+                        <span class="tag">Fusión asiática</span>
+                    </div>
+                </div>
+            </div>
+        
+
+            <!-- Botones de acción -->
+            <div class="perfilAcciones">
+                <a href="adminRecetas.html" class="btnPrimario"><i class="fa-solid fa-plus"></i> Crear nueva receta</a>
+                <a href="adminVerificacion.html" class="btnSecundario">Recetas Pendientes De Verificar</a>
+            </div>
+        </section>
+
+        <section class="estadisticas">
+
+            <div class="card">
+                <div class="cardHeader">
+                    <p>Recetas Publicadas</p>
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <h3>42</h3>
+            </div>
+
+            <div class="card">
+                <div class="cardHeader">
+                    <p>Seguidores</p>
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <h3>1,284</h3>
+            </div>
+
+            <div class="card">
+                <div class="cardHeader">
+                    <p>Rating Promedio</p>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h3>4.8</h3>
+            </div>
+
+        </section>
+
+        <section class="contenidoPrincipal">
+            
+            <!-- Ranking -->
+            <div class="ranking">
+                <h3>Ranking de mis recetas mejor valoradas</h3>
+                <ol>
+                    <li>
+                        <div>
+                            <p>Risoto de Mariscos</p>
+                            <span>Italiana · 128 valoraciones</span>
+                        </div>
+                        <span>4.9</span>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Ceviche Peruano Clásico</p>
+                            <span>Peruana · 97 valoraciones</span>
+                        </div>
+                        <span>4.8</span>
+                    </li>
+                    <li>
+                        <div>
+                            <p>Ramen Tonkotsu</p>
+                            <span>Japonesa · 84 valoraciones</span>
+                        </div>
+                        <span>4.7</span>
+                    </li>   
+                </ol>
+            </div>
+
+            <!-- Actividad reciente -->
+            <div class="actividad">
+                <h3>Actividad reciente</h3>
+                <ul>
+                   
+                    <li>
+                        <i class="fa-solid fa-circle-check"></i>
+                        <div>
+                            <p>Tu receta 'Risotto de Mariscos' fue verificada</p>
+                            <span>hace 2 horas</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-users"></i>
+                        <div>
+                            <p>Nuevo seguidor: @laura.cocina</p>
+                            <span>hace 4 horas</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <i class="fa-regular fa-comment"></i>
+                        <div>
+                            <p>Comentario en 'Ceviche Peruano'</p>
+                            <span>hace 6 horas</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Contacto: contacto@saborconecta.com</p>
+        <p>Soporte: soporte@saborconecta.com</p>
+        <p>&copy; 2024 SaborConecta. Todos los derechos reservados.</p>
+    </footer>
+
+
+</body>
+</html>
