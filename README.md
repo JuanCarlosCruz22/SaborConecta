@@ -2,56 +2,26 @@
 
 ## Descripción del proyecto
 
-SaborConecta es una plataforma digital colaborativa para la gestión y descubrimiento de recetas culinarias. Permite a los usuarios planificar sus comidas según presupuesto, preferencias dietéticas e ingredientes disponibles, además de fomentar una comunidad activa de chefs y aficionados a la cocina que comparten, valoran y mejoran recetas de forma colaborativa.
+SaborConecta es una plataforma digital colaborativa para la gestión y descubrimiento de recetas culinarias. Permite a los usuarios planificar sus comidas según presupuesto, preferencias dietéticas e ingredientes disponibles, y fomenta una comunidad activa de chefs y aficionados a la cocina que comparten, valoran y mejoran recetas de forma colaborativa.
 
-## Alcance
+## Alcance (Avance II)
 
-Este repositorio corresponde al **Avance I** del proyecto del curso SOFT-06 (Diseño y programación web). En esta etapa el alcance es:
+Este repositorio corresponde al **Avance II** del proyecto del curso SOFT-06 (Diseño y programación web). A partir de la propuesta y los wireframes definidos en el Avance I, en esta segunda iteración se construyó la maquetación funcional en HTML y CSS:
 
-- Definir la propuesta de solución para la problemática de gestión culinaria.
-- Diseñar los wireframes de navegación y disposición de contenido para al menos 6 funcionalidades, distribuidas entre dos tipos de usuario: **Chef/Experto culinario** y **Usuario regular**.
-- Establecer la estructura del repositorio y la estrategia de trabajo colaborativo en GitHub que se usará durante el resto del proyecto.
+- 6 pantallas funcionales, cubriendo dos tipos de usuario: **Administrador** y **Usuario/Colaborador**.
+- HTML semántico (`header`, `nav`, `main`, `section`, `article`, `footer`) con formularios correctamente etiquetados.
+- CSS organizado con variables globales (colores, tipografías, espaciados) y estilos separados por módulos (`base.css`, `layout.css`, `components.css`).
+- Diseño responsive (mínimo 1 página completa) implementado con Flexbox/Grid.
+- Navegación funcional entre todas las pantallas mediante un menú consistente.
+- Accesibilidad mínima: texto alternativo en imágenes, contraste adecuado y foco visible en elementos interactivos.
 
-La implementación funcional con HTML, CSS y JavaScript se desarrollará en avances posteriores, a partir de la retroalimentación recibida sobre esta maquetación.
+## Integrantes y roles (Avance II)
 
-## Integrantes y roles
-
-| Integrante | Rol en este avance |
+| Integrante | Rol |
 |---|---|
-| Juan Carlos Cruz | Repositorio y documentación (README.md) |
-| Esteban López | Wireframes de Usuario regular |
-| Alejandro Navarro | Wireframes de Chef/Experto culinario |
-| Julián Salazar | Integración, navegación entre wireframes y entrega final |
+| Esteban López | Setup del repositorio, variables CSS globales, pantallas del rol Administrador |
+| Luis Alejandro Navarro | Pantallas del rol Usuario/Colaborador, formulario con labels |
+| Julián Salazar | Diseño responsive, navegación entre pantallas, accesibilidad |
+| Juan Carlos Cruz | README, organización final del repositorio, control de calidad, documento de entrega |
 
 ## Estructura del repositorio
-
-```
-SaborConecta/
-├── README.md
-└── docs/
-    └── wireframes.pdf   (wireframes de las 6 funcionalidades, con flujo de navegación)
-```
-
-La carpeta `docs` se irá utilizando en próximos avances para mantener toda la documentación del proyecto (wireframes, manuales, diagramas, etc.).
-
-## Estrategia de branches y commits
-
-- **main**: rama principal y estable. Solo se actualiza mediante Pull Requests revisados, nunca con push directo.
-- Cada integrante trabaja en su propia rama, con la convención `feature/<tarea>`, por ejemplo:
-  - `feature/wireframes-usuario-regular`
-  - `feature/wireframes-chef`
-  - `feature/integracion-navegacion`
-
-## Wireframes
-
-Documento realizado en Figma:
-https://www.figma.com/design/0FveH9f2OPCqrFrdQFjWw8/Integracion-Wireframes-Dise%C3%B1o-y-programacion-web?node-id=0-1&t=W8IY0paEs6EnjLX7-1
-
-PDF final:
-docs/SaborConecta_Wireframes_Final.pdf
-  - `feature/readme`
-- Al finalizar una tarea, se abre un **Pull Request** hacia `main` para que el resto del equipo revise antes de fusionar.
-- Los mensajes de commit son cortos, descriptivos y en español, indicando la acción realizada. Ejemplos:
-  - `Agrega wireframe de búsqueda por ingredientes`
-  - `Conecta navegación entre dashboard y planificador de comidas`
-  - `Actualiza README con estrategia de branches`
