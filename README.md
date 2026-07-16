@@ -1,9 +1,3 @@
-# SaborConecta
-
-## Descripción del proyecto
-
-SaborConecta es una plataforma digital colaborativa para la gestión y descubrimiento de recetas culinarias. Permite a los usuarios planificar sus comidas según presupuesto, preferencias dietéticas e ingredientes disponibles, y fomenta una comunidad activa de chefs y aficionados a la cocina que comparten, valoran y mejoran recetas de forma colaborativa.
-
 ## Alcance (Avance II)
 
 Este repositorio corresponde al **Avance II** del proyecto del curso SOFT-06 (Diseño y programación web). A partir de la propuesta y los wireframes definidos en el Avance I, en esta segunda iteración se construyó la maquetación funcional en HTML y CSS:
@@ -14,14 +8,13 @@ Este repositorio corresponde al **Avance II** del proyecto del curso SOFT-06 (Di
 - Diseño responsive (mínimo 1 página completa) implementado con Flexbox/Grid.
 - Navegación funcional entre todas las pantallas mediante un menú consistente.
 - Accesibilidad mínima: texto alternativo en imágenes, contraste adecuado y foco visible en elementos interactivos.
+- Se corrigió una inconsistencia respecto al Avance I: la pantalla `Receta.html` reemplaza al formulario de creación de recetas del lado de Usuario/Colaborador, alineándose con el wireframe original donde el usuario regular visualiza recetas (no las crea).
 
 ## Integrantes y roles (Avance II)
 
 | Integrante | Rol |
 |---|---|
 | Esteban López | Setup del repositorio, variables CSS globales, pantallas del rol Administrador |
-| Luis Alejandro Navarro | Pantallas del rol Usuario/Colaborador, formulario con labels |
-| Julián Salazar | Diseño responsive, navegación entre pantallas, accesibilidad |
+| Luis Alejandro Navarro | Versión inicial de las pantallas de Usuario/Colaborador (perfil, navegación, formulario de recetas) |
+| Julián Salazar | Diseño responsive, navegación entre pantallas, accesibilidad, corrección y rehechura de las pantallas de Usuario/Colaborador (perfil, nav y visualizador de recetas) |
 | Juan Carlos Cruz | README, organización final del repositorio, control de calidad, documento de entrega |
-
-## Estructura del repositorio
