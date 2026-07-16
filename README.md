@@ -1,3 +1,8 @@
+# SaborConecta
+
+## Descripción del proyecto
+SaborConecta es una plataforma digital colaborativa para la gestión y descubrimiento de recetas culinarias. Permite a los usuarios planificar sus comidas según presupuesto, preferencias dietéticas e ingredientes disponibles, y fomenta una comunidad activa de chefs y aficionados a la cocina.
+
 ## Alcance (Avance II)
 
 Este repositorio corresponde al **Avance II** del proyecto del curso SOFT-06 (Diseño y programación web). A partir de la propuesta y los wireframes definidos en el Avance I, en esta segunda iteración se construyó la maquetación funcional en HTML y CSS:
