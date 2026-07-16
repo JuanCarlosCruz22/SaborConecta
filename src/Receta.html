@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SaborConecta</title>
+
+<link rel="stylesheet" href="../css/Formulario.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+ 
+<header>
+    <a href="#" class="logo-link">
+        <div class="logo">🍽️ SaborConecta</div>
+    </a>
+ 
+    <nav>
+        <a href="Inicio.html">Inicio</a>
+        <a href="#">Recetas</a>
+    </nav>
+ 
+    <a href="Perfil.html" class="perfil">Perfil</a>
+</header>
+ 
+<div class="breadcrumb">
+    <a href="Inicio.html">Inicio</a> &gt; <span>Nombre Receta</span>
+</div>
+ 
+<main>
+    <div class="contenedor-receta">
+ 
+        <!-- Columna izquierda: imagen y acciones -->
+        <div class="columna-izquierda">
+            <div class="imagen-receta">
+                <img src="https://via.placeholder.com/700x500/e8e8e8/999999?text=Imagen+de+la+receta" alt="Imagen de la receta">
+            </div>
+ 
+            <button class="accion accion-guardar">
+                <span class="icono">❤️</span> Guardar en colección
+            </button>
+ 
+            <button class="accion accion-plan">
+                <span class="icono">📅</span> Agregar a plan semanal
+            </button>
+ 
+            <button class="accion accion-personalizar">
+                Crear versión personalizada
+            </button>
+        </div>
+ 
+        <!-- Columna derecha: información de la receta -->
+        <div class="columna-derecha">
+ 
+            <h1>Nombre Receta</h1>
+ 
+            <div class="etiquetas">
+                <span class="etiqueta">Fácil</span>
+                <span class="etiqueta">⏱ 30 min</span>
+                <span class="etiqueta">4 Porciones</span>
+                <span class="chef">— Chef: Antonio L.</span>
+            </div>
+ 
+            <section class="ingredientes">
+                <h2>Ingredientes y costo aproximado</h2>
+ 
+                <div class="tabla-ingredientes">
+                    <div class="fila-ingrediente">
+                        <span class="nombre-ingrediente">Arroz</span>
+                        <span class="flecha">→</span>
+                        <span class="unidad">2 tazas</span>
+                        <span class="precio">₡800</span>
+                    </div>
+                    <div class="fila-ingrediente">
+                        <span class="nombre-ingrediente">Pechuga de pollo</span>
+                        <span class="flecha">→</span>
+                        <span class="unidad">500 g</span>
+                        <span class="precio">₡2 500</span>
+                    </div>
+                    <div class="fila-ingrediente">
+                        <span class="nombre-ingrediente">Cebolla</span>
+                        <span class="flecha">→</span>
+                        <span class="unidad">1 unidad</span>
+                        <span class="precio">₡150</span>
+                    </div>
+                    <div class="fila-ingrediente">
+                        <span class="nombre-ingrediente">Salsa de soya</span>
+                        <span class="flecha">→</span>
+                        <span class="unidad">3 cdas</span>
+                        <span class="precio">₡300</span>
+                    </div>
+                </div>
+            </section>
+ 
+            <section class="instrucciones">
+                <h2>Instrucciones</h2>
+                <ol>
+                    <li><span class="num">1</span> Corta la pechuga de pollo en cubos pequeños.</li>
+                    <li><span class="num">2</span> Cocina el arroz y sofríe el pollo con la cebolla.</li>
+                    <li><span class="num">3</span> Mezcla todo con la salsa de soya y sirve caliente.</li>
+                </ol>
+            </section>
+ 
+            <section class="calificaciones">
+                <h2>Calificaciones</h2>
+                <div class="estrellas-resumen">
+                    <span class="estrellas">★★★★★</span>
+                    <span class="detalle-calificacion">4.7 / 5 — 28 calificaciones</span>
+                </div>
+ 
+                <p class="tu-calificacion-label">Tu calificación:</p>
+                <div class="estrellas-usuario" role="group" aria-label="Calificar receta">
+                    <button class="estrella" aria-label="1 estrella">★</button>
+                    <button class="estrella" aria-label="2 estrellas">★</button>
+                    <button class="estrella" aria-label="3 estrellas">★</button>
+                    <button class="estrella" aria-label="4 estrellas">★</button>
+                    <button class="estrella" aria-label="5 estrellas">★</button>
+                </div>
+ 
+                <div class="comentarios">
+                    <div class="comentario">
+                        <strong>Maria Ortiz.</strong> Quedó deliciosa, la hice para toda la familia.
+                    </div>
+                </div>
+ 
+                <div class="grupo-comentario">
+                    <textarea placeholder="Escribe un comentario..." rows="2"></textarea>
+                    <button class="btn-publicar">Publicar Comentario</button>
+                </div>
+            </section>
+ 
+        </div>
+    </div>
+</main>
+ 
+<footer>
+    <p>© 2026 SaborConecta — Todos los derechos reservados</p>
+</footer>
+ 
+</body>
+</html>
