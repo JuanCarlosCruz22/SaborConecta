@@ -20,7 +20,16 @@
     <nav>
         <a href="Inicio.html">Inicio</a>
         <a href="#">Recetas</a>
+        <a href="adminDashboard.html" class="admin-only">Panel Admin</a>
     </nav>
+
+    <div class="login-sim">
+        <select id="selectorRol">
+            <option value="usuario">Usuario</option>
+            <option value="admin">Administrador</option>
+        </select>
+        <button id="btnLogin">Ingresar</button>
+    </div>
  
     <a href="Perfil.html" class="perfil">Perfil</a>
 </header>
@@ -138,6 +147,8 @@
 <footer>
     <p>© 2026 SaborConecta — Todos los derechos reservados</p>
 </footer>
+
+<script src="../js/usuario.js"></script>
  
 </body>
 </html>

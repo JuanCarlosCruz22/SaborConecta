@@ -27,8 +27,17 @@
 
 <a href="Inicio.html">Inicio</a>
 <a href="Receta.html">Recetas</a>
+<a href="adminDashboard.html" class="admin-only">Panel Admin</a>
 
 </nav>
+
+<div class="login-sim">
+    <select id="selectorRol">
+        <option value="usuario">Usuario</option>
+        <option value="admin">Administrador</option>
+    </select>
+    <button id="btnLogin">Ingresar</button>
+</div>
 
 <a href="#">Perfil</a>
 
@@ -159,6 +168,8 @@ Amante de la cocina mediterránea y las recetas saludables.
 © 2026 SaborConecta
 
 </footer>
+
+<script src="../js/usuario.js"></script>
 
 </body>
 </html>
