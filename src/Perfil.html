@@ -169,7 +169,43 @@ Amante de la cocina mediterránea y las recetas saludables.
 
 </footer>
 
+<!-- Modal Editar Perfil (Persona 4 - Juan Carlos) -->
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-editar-perfil" role="dialog" aria-labelledby="tituloModalPerfil" aria-modal="true">
+        <div class="modal-header">
+            <h2 id="tituloModalPerfil">Editar Perfil</h2>
+            <button type="button" id="btnCerrarModal" aria-label="Cerrar formulario">✕</button>
+        </div>
+
+        <form id="formEditarPerfil" novalidate>
+            <div class="campo-form">
+                <label for="nombrePerfil">Nombre completo</label>
+                <input type="text" id="nombrePerfil" name="nombre" value="Marco Castillo" required>
+                <span class="mensaje-campo" id="errorNombre"></span>
+            </div>
+
+            <div class="campo-form">
+                <label for="correoPerfil">Correo electrónico</label>
+                <input type="email" id="correoPerfil" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                <span class="mensaje-campo" id="errorCorreo"></span>
+            </div>
+
+            <div class="campo-form">
+                <label for="bioPerfil">Biografía</label>
+                <textarea id="bioPerfil" name="bio" rows="3">Amante de la cocina mediterránea y las recetas saludables.</textarea>
+                <span class="mensaje-campo" id="errorBio"></span>
+            </div>
+
+            <div class="acciones-modal">
+                <button type="button" id="btnCancelarPerfil" class="btn-secundario">Cancelar</button>
+                <button type="submit" class="btn-primario">Guardar cambios</button>
+            </div>
+        </form>
+    </div>
+</div>
+
 <script src="../js/usuario.js"></script>
+<script src="../js/perfil.js"></script>
 
 </body>
 </html>
