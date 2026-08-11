@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,15 +51,15 @@
 
         <section class="verificacionFiltros">
             <i class="fa-solid fa-filter"></i>
-            <button class="filtroBtn filtroActivo">Todas</button>
-            <button class="filtroBtn">Pendientes</button>
-            <button class="filtroBtn">Recientes</button>
-            <span class="filtroTotal">4 recetas</span>
+            <button class="filtroBtn filtroActivo" data-filtro="todas">Todas</button>
+            <button class="filtroBtn" data-filtro="pendientes">Pendientes</button>
+            <button class="filtroBtn" data-filtro="recientes">Recientes</button>
+            <span class="filtroTotal" id="filtroTotal">3 recetas</span>
         </section>
 
-        <section class="verificacionLista">
+        <section class="verificacionLista" id="verificacionLista">
 
-            <div class="recetaCard">
+            <div class="recetaCard" data-estado="pendiente">
                 <div class="recetaImagen">
                     <i class="fa-regular fa-image"></i>
                     <span>Sin imagen</span>
@@ -84,7 +85,7 @@
                     </div>
                 </div>
             </div>
-            <div class="recetaCard">
+            <div class="recetaCard" data-estado="pendiente">
                 <div class="recetaImagen">
                     <i class="fa-regular fa-image"></i>
                     <span>Sin imagen</span>
@@ -111,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="recetaCard">
+            <div class="recetaCard" data-estado="reciente">
                 <div class="recetaImagen">
                     <i class="fa-regular fa-image"></i>
                     <span>Sin imagen</span>
@@ -146,5 +147,7 @@
         <p>Soporte: soporte@saborconecta.com</p>
         <p>&copy; 2024 SaborConecta. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="../js/verificacion.js"></script>
 </body>
 </html>

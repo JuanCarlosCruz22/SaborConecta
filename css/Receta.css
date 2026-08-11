@@ -492,6 +492,11 @@ body.usando-teclado *:focus {
     transform: scale(0.97);
 }
 
+.accion-guardar.guardado {
+    background-color: rgba(231, 76, 60, 0.1);
+    border-color: #e74c3c;
+}
+
 @media(max-width:900px){
  
     .contenedor-receta{
