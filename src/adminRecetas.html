@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -37,7 +38,7 @@
             </div>
             <div class="recetaAcciones">
                 <button class="btnSecundario">Guardar borrador</button>
-                <button class="btnPrimario"><i class="fa-solid fa-arrow-right"></i> Publicar receta</button>
+                <button class="btnPrimario" id="btnPublicar1"><i class="fa-solid fa-arrow-right"></i> Publicar receta</button>
             </div>
         </section>
 
@@ -53,16 +54,19 @@
                     <div class="campoCompleto">
                         <label for="nombreReceta">Nombre de la receta</label>
                         <input type="text" id="nombreReceta" placeholder="Nombre de la receta">
+                        <span class="errorMsg" id="errorNombreReceta"></span>
                     </div>
 
                     <div class="campoDoble">
                         <div>
                             <label for="tipoCocina">Tipo de cocina</label>
                             <input type="text" id="tipoCocina" placeholder="Fusión">
+                            <span class="errorMsg" id="errorTipoCocina"></span>
                         </div>
                         <div>
                             <label for="dificultad">Dificultad</label>
                             <input type="text" id="dificultad" placeholder="Alta">
+                            <span class="errorMsg" id="errorDificultad"></span>
                         </div>
                     </div>
 
@@ -81,10 +85,12 @@
                         <div>
                             <label for="tiempoPreparacion">Tiempo de preparación</label>
                             <input type="text" id="tiempoPreparacion" placeholder="25 minutos">
+                            <span class="errorMsg" id="errorTiempoPreparacion"></span>
                         </div>
                         <div>
                             <label for="porciones">Porciones</label>
                             <input type="text" id="porciones" placeholder="4 porciones">
+                            <span class="errorMsg" id="errorPorciones"></span>
                         </div>
                     </div>
                 </div>
@@ -124,6 +130,15 @@
                     </div>
                 </div>
 
+                <!-- Mis recetas creadas -->
+                <div class="cajaFormulario">
+                    <h3><i class="fa-solid fa-list"></i> Mis recetas creadas</h3>
+
+                    <div id="listaRecetas">
+                        <p id="sinRecetas">Aún no has creado ninguna receta.</p>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Columna derecha -->
@@ -159,7 +174,7 @@
 
                     <div class="recetaAcciones">
                         <button class="btnSecundario">Guardar borrador</button>
-                        <button class="btnPrimario"><i class="fa-solid fa-arrow-right"></i> Publicar receta</button>
+                        <button class="btnPrimario" id="btnPublicar2"><i class="fa-solid fa-arrow-right"></i> Publicar receta</button>
                     </div>
                 </div>
             </div>
@@ -172,5 +187,6 @@
         <p>Soporte: soporte@saborconecta.com</p>
         <p>&copy; 2024 SaborConecta. Todos los derechos reservados.</p>
     </footer>
+    <script src="../js/admin.js"></script>
 </body>
 </html>
